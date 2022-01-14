@@ -6,9 +6,8 @@ from scipy.signal import argrelextrema
 from datetime import datetime
 
 def load_df():
-    df = pd.read_csv('Output.csv', encoding='windows-1251', sep=',')
+    df = pd.read_csv('data_formatted.csv', encoding='windows-1251', sep=',')
     return df
-
 
 def load_district_distr_info():
     df = load_df()
